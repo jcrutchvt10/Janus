@@ -1,5 +1,7 @@
 Janus CVE-2017-13156 PoC
 
+Android package installer does NOT check extra data before PKZIP, thus concat DEX+APK together and little bit of fix, installation passed.
+
 usage: janus.py dex apk out_apk
 
 ART can run both APK and DEX, so here DEX ahead of base.apk is actually the one to execute.
